@@ -1,0 +1,8 @@
+.flex {
+  display: flex
+}
+
+.container {
+  align-content: center;
+  align-items: center;
+}

@@ -1,0 +1,40 @@
+
+<nav>
+  <h1>Clase3</h1>
+  <button [routerLink]="['/login']">Login</button>
+  <button [routerLink]="['/home']">Home</button>
+</nav>
+
+
+
+
+
+
+<router-outlet></router-outlet>
+
+
+
+
+
+<!-- CONTENIDO DEL CAPITULO DEL FORMULARIO -->
+<!-- <div>
+
+  <form #formulario="ngForm">
+
+
+    INPUT 1
+    <input type="text" class="form-control" id="name" 
+    required [(ngModel)]="nombre" name="name" #name="ngModel">
+
+<br>
+    <input type="email" class="form-control" id="email" 
+    required email [(ngModel)]="direccion" name="email" #email="ngModel">
+
+    <button [disabled]="!email.valid">email</button>
+
+    <button [disabled]="!formulario.valid">Enviar</button>
+    
+
+  </form>
+
+</div> -->

@@ -1,0 +1,17 @@
+<div>
+  <form #formulario='ngForm'>
+    <input type="search" name="busqueda" id="busqueda" #busqueda="ngModel" [(ngModel)]="resultadoBusqueda" required>
+    <button [disabled]="!formulario.valid" (click)="buscarPelicula()">Buscar</button>
+  </form>
+</div>
+
+<div>
+
+  <ul>
+    <li *ngFor="let pelicula of peliculas">
+      <a href="" [routerLink]="['/detalle', pelicula.imdbID]">{{pelicula.Title}}</a>
+      <img [src]="pelicula.Poster" width="100" height="100" alt="">
+
+    </li>
+  </ul>
+</div>
